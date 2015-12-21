@@ -8,4 +8,4 @@
 
 ## Additional links
 
-see the [wiki](/wiki) for all curated external resources
+see the [wiki](../../wiki) for all curated external resources
