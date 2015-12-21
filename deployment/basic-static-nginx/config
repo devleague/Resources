@@ -1,0 +1,17 @@
+# this file belongs in /etc/nginx/sites-enabled/yourapp.conf
+# replace "your app" lines with the name of the app you are deploying
+# Assumes you have static html files in /var/www/yourappdomain.com/public (change this)
+
+server {
+
+  listen 80;
+
+  server_name yourappdomain.com;
+
+  root /var/www/yourappdomain.com/public;
+
+  location / {
+    try_files $uri $uri/ =404;
+  }
+
+}
